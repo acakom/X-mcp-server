@@ -1,0 +1,79 @@
+Twitter Search Syntax Guide
+==========================
+
+This guide explains how to construct effective Twitter search queries using Twitter's built-in search operators.
+
+BASIC SEARCH SYNTAX
+------------------
+
+Keywords and Phrases
+-------------------
+keyword                - Finds tweets containing a specific word (Example: crypto)
+multiple words         - Finds tweets containing all words (AND operator) (Example: bitcoin ethereum)
+"exact phrase"         - Finds tweets containing the exact phrase (Example: "web3 development")
+word1 OR word2         - Finds tweets containing either term (Example: bitcoin OR ethereum)
+word -excludedword     - Excludes tweets with the specified word (Example: crypto -scam)
+
+User-Related Operators
+---------------------
+from:username          - Tweets sent by a specific account (Example: from:elonmusk)
+to:username            - Replies to a specific account (Example: to:Twitter)
+@username              - Tweets mentioning the account (Example: @NASA)
+list:username/listname - Tweets from accounts in a specific list (Example: list:Twitter/verified)
+
+Media and Links
+-------------
+filter:media           - Tweets with any media (Example: nft filter:media)
+filter:images          - Tweets with images (Example: art filter:images)
+filter:native_video    - Tweets with uploaded videos (Example: tutorial filter:native_video)
+filter:links           - Tweets containing links (Example: news filter:links)
+url:text               - Tweets with links containing specific text (Example: crypto url:github)
+
+Date Ranges
+----------
+since:YYYY-MM-DD       - Tweets after this date (Example: bitcoin since:2023-01-01)
+until:YYYY-MM-DD       - Tweets before this date (Example: bitcoin until:2023-12-31)
+
+Engagement and Sentiment
+----------------------
+min_retweets:n         - Tweets with at least n retweets (Example: bitcoin min_retweets:100)
+min_faves:n            - Tweets with at least n likes (Example: art min_faves:500)
+min_replies:n          - Tweets with at least n replies (Example: politics min_replies:10)
+-filter:retweets       - Exclude retweets (Example: news -filter:retweets)
+:)                     - Tweets with positive sentiment (Example: service :))
+:(                     - Tweets with negative sentiment (Example: weather :()
+?                      - Tweets asking a question (Example: cryptocurrency ?)
+
+ADVANCED COMBINATIONS
+-------------------
+
+You can combine multiple operators for more specific searches:
+
+from:elonmusk since:2023-01-01 filter:media
+    - Media tweets from Elon Musk since January 2023
+
+crypto OR bitcoin min_retweets:100 -filter:retweets
+    - Original tweets about crypto or bitcoin with 100+ retweets
+
+"climate change" filter:links lang:en
+    - English tweets about climate change containing links
+
+from:NASA @SpaceX
+    - Tweets from NASA mentioning SpaceX
+
+TIPS FOR EFFECTIVE SEARCHING
+--------------------------
+
+1. Be specific: Use exact phrases when searching for specific content
+2. Multiple operators: Combine operators to narrow down results
+3. Exclusions: Use the minus sign (-) to exclude unwanted content
+4. Date ranges: Use date operators to find recent or historical tweets
+5. Engagement filters: Use min_retweets, min_faves to find popular content
+
+IMPORTANT NOTES
+-------------
+
+- Twitter search is case-insensitive
+- Twitter's advanced search may not return tweets older than 7-10 days
+- Some operators may not work exactly as described due to API limitations
+- Twitter syntax changes periodically, so some operators may become deprecated

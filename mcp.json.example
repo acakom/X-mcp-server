@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+      "x-tools": {
+          "command": "node",
+          "args": [
+              "C:\\Users\\Giovanni\\Desktop\\x-mcp-tools\\main.js"
+          ],
+          "env": {
+              
+              "RAPIDAPI_KEY": "fe0cc900e2msh9b273654e057de1p170031jsn25dcf1c45efc"    
+          }
+      }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "twitter-x-mcp-server",
+  "version": "1.0.0",
+  "description": "X Tools for Claude MCP: A lightweight toolkit enabling Claude AI to search Twitter with natural language and display unanalyzed results.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xGval/twitter-X-mcp-server.git"
+  },
+  "keywords": [
+    "claude",
+    "mcp",
+    "twitter",
+    "search",
+    "anthropic"
+  ],
+  "author": "0xGval",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0xGval/twitter-X-mcp-server/issues"
+  },
+  "homepage": "https://github.com/0xGval/twitter-X-mcp-server#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "axios": "^1.8.3",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.2"
+  }
+}
