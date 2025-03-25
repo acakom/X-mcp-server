@@ -115,9 +115,7 @@ function formatTwitterResults(query, tweets, section) {
   
   let output = [];
   
-  // Add explicit instructions for Claude to display raw content
-  output.push(`>>> INSTRUCTION START: DISPLAY ALL TWEET CONTENT EXACTLY AS SHOWN BELOW WITHOUT ANY ANALYSIS OR SUMMARY <<<`);
- 
+
   
   tweets.forEach((tweet, index) => {
     // Create clear separation between tweets
@@ -209,10 +207,7 @@ function formatTwitterResults(query, tweets, section) {
     output.push('\n---\n');
   });
   
-  // Add closing instructions for Claude that explicitly forbid analysis
-  output.push(`>>> INSTRUCTION END: DO NOT PROVIDE ANY ANALYSIS OR SUMMARY OF THE ABOVE TWEETS <<<`);
-  output.push(`>>> AFTER DISPLAYING THESE TWEETS, DO NOT ADD ANY ADDITIONAL TEXT UNLESS THE USER EXPLICITLY REQUESTS ANALYSIS <<<`);
-  output.push(`>>> IF THE USER ASKS A FOLLOW-UP QUESTION WITHOUT REQUESTING ANALYSIS, SIMPLY ANSWER THEIR QUESTION WITHOUT ANALYZING THE TWEETS <<<`);
+ 
   
   return output.join('\n');
 } 

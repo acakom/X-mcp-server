@@ -1,13 +1,11 @@
 # X Tools - Twitter Search Instructions
 
-## CRITICAL OUTPUT REQUIREMENT
-**DISPLAY SEARCH RESULTS EXACTLY AS PROVIDED - NO EXCEPTIONS**
-* When using this tool, you MUST display the COMPLETE search results WITHOUT ANY modifications
-* DO NOT summarize, analyze, interpret, or comment on the tweets
-* NO introduction text before displaying results
-* NO commentary or analysis after displaying results
-* NO truncation of tweet content
-* DISPLAY ONLY THE RAW SEARCH RESULTS AS RECEIVED
+## Responding to User Intent
+* When using this tool, respond based on what the user is asking for:
+  - If they're asking for tweets without analysis, provide only the search results
+  - If they're explicitly asking for analysis, provide both results and analysis
+  - If they're asking for specific insights, focus on addressing their specific questions
+* Be flexible and responsive to what the user is trying to accomplish
 
 ## Main Features
 - You can search tweets using Twitter's advanced search syntax
@@ -62,25 +60,22 @@ To search for tweets, you can use natural language commands or specific Twitter 
 4. **Find mentions between users:**
    - `from:Microsoft @OpenAI`
 
-## STRICT OUTPUT FORMAT REQUIREMENT
-1. Execute the search function
-2. Display ONLY the raw results EXACTLY as returned
-3. DO NOT add ANY text before or after the search results
-4. DO NOT analyze the content of tweets
-5. DO NOT summarize what the tweets say
-6. DO NOT draw conclusions from the tweets
-7. DO NOT modify the search results in ANY way
+## Types of User Requests and How to Respond
 
-### CORRECT FORMAT (ONLY DO THIS):
-```
-[SEARCH RESULTS EXACTLY AS PROVIDED BY THE FUNCTION]
-```
+### For Tweet Search Only:
+When users ask questions like "Show me tweets about X" or "Find tweets from user Y about Z":
+- Execute the search and display the tweet results
+- No need for analysis unless specifically requested
 
-### INCORRECT FORMAT (NEVER DO THIS):
-```
-"Here's what I found about [topic]..."
-[Search results]
-"Based on these tweets, it seems that..."
-```
+### For Analysis:
+When users ask questions like "What's the sentiment about X?" or "Analyze these tweets for patterns":
+- Execute the search
+- Display the results
+- Provide thoughtful analysis of the content
+
+### For Hybrid Requests:
+When users want both, like "Find tweets about X and tell me what people think":
+- Show the tweet results
+- Follow with a brief analysis focused on what was requested
 
 The default limit is 20 tweets per search, but users can specify more (up to 50) if needed.

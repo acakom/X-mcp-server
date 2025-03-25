@@ -1,13 +1,13 @@
 # X Tools for Claude MCP
 
-A lightweight, open-source toolkit that enables Claude to search Twitter efficiently and display results exactly as returned without analysis or summarization. Designed primarily for natural language interactions.
+A lightweight, open-source toolkit that enables Claude to search Twitter efficiently with natural language and display results based on user intent. Designed for both raw data viewing and optional analysis.
 
 ## Features
 
 - **Natural Language Search**: Ask Claude to search Twitter in plain English
 - **Twitter Search**: Search tweets using natural language or advanced Twitter syntax
 - **Professional Formatting**: Clean, markdown-formatted tweet display
-- **Raw Results**: Configured to show tweet content exactly as returned without AI analysis
+- **Flexible Output**: Display raw tweets or add analysis based on what you ask for
 - **Advanced Filtering**: Find tweets by keywords, users, dates, engagement metrics, and more
 - **Pagination Support**: Retrieve more than the default 20 tweets per search when needed
 
@@ -31,7 +31,7 @@ A lightweight, open-source toolkit that enables Claude to search Twitter efficie
 1. **Clone this repository**:
    ```bash
    git clone https://github.com/0xGval/twitter-X-mcp-server
-   cd x-tools-mcp
+   cd twitter-X-mcp-tools
    ```
 
 2. **Install dependencies**:
@@ -102,11 +102,11 @@ Ask Claude:
 Search for tweets about climate change with at least 100 likes from the past month
 ```
 
-### Engagement-Filtered Query
+### Analysis Request
 
 Ask Claude:
 ```
-Find popular tweets discussing the new Apple Vision Pro that include images
+What's the sentiment around the new Bitcoin ETF based on recent tweets?
 ```
 
 ## Direct Syntax Examples
@@ -131,7 +131,7 @@ This tool includes several important files that must be properly set up:
 
 - **main.js**: The main application file
 - **tools/twitter.js**: The Twitter search implementation
-- **claude-rules.md**: Instructions for Claude to display search results correctly
+- **claude-rules.md**: Instructions for Claude to display search results appropriately
 - **knowledge/TwitterSearchSyntaxGuide.txt**: Reference guide for Twitter search syntax
 
 Make sure all these files are placed in the correct locations in your Claude setup.
@@ -167,8 +167,8 @@ Common issues:
 - **API Key Not Found**: Ensure your RapidAPI key is correctly set in `mcp.json`
 - **Path Errors**: Make sure you're using full absolute paths with proper escaping in Windows (`\\`)
 - **No Results**: Check that your search query is valid and not too restrictive
-- **Claude Still Summarizes**: Make sure you have the latest version of the tool that includes the strict output format instructions
-- **Missing Files**: Verify that `claude-rules.md` and `TwitterSearchSyntaxGuide.txt` are properly added to your Claude rules andknowledge base
+- **Claude Behavior Issues**: Make sure you have the latest version of `claude-rules.md` that includes the flexible output instructions
+- **Missing Files**: Verify that `claude-rules.md` and `TwitterSearchSyntaxGuide.txt` are properly added to your Claude rules and knowledge base
 
 ## Development
 
@@ -191,4 +191,4 @@ This project is licensed under the MIT License.
 
 ---
 
-**Note**: This tool is designed to work with the Claude AI assistant and display Twitter search results exactly as returned, without any analysis or summarization.
+**Note**: This tool is designed to work with the Claude AI assistant and provide Twitter search results with flexible display options based on user intent.
