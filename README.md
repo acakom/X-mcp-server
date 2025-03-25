@@ -17,7 +17,14 @@ A lightweight, open-source toolkit that enables Claude to search Twitter efficie
 
 - Node.js v16+
 - Claude for Desktop
-- Free RapidAPI key with access to Twitter154 API endpoint
+- Free RapidAPI key with access to the "The Old Bird API" (Twitter154) endpoint
+
+### RapidAPI Key Setup
+
+1. Visit [The Old Bird API on RapidAPI](https://rapidapi.com/omarmhaimdat/api/twitter154)
+2. Sign up for a RapidAPI account if you don't have one
+3. Subscribe to the API (there is a free tier available)
+4. Once subscribed, copy your RapidAPI key from your dashboard
 
 ### Setup Steps
 
