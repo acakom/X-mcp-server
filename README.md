@@ -1,3 +1,5 @@
+originally from this repo: https://github.com/0xGval/twitter-X-mcp-server
+
 # X Tools for Claude MCP
 
 A lightweight, open-source toolkit that enables Claude to search Twitter efficiently with natural language and display results based on user intent. Designed for both raw data viewing and optional analysis.
