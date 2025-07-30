@@ -1,0 +1,30 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'node',
+      args: ['main.js'],
+      env: {
+        RAPIDAPI_KEY: config.rapidapiKey,
+        DEEPSEEK_API_KEY: config.deepseekApiKey || ''
+      }
+    })
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - rapidapiKey
+    properties:
+      rapidapiKey:
+        type: string
+        description: RapidAPI key for Twitter API
+      deepseekApiKey:
+        type: string
+        description: Optional Deepseek API key for enhanced functionality
+  exampleConfig:
+    rapidapiKey: your_rapidapi_key_here
+    deepseekApiKey: ""
